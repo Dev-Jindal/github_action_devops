@@ -19,7 +19,7 @@ jobs:
           pipenv install fastapi uvicorn pytest requests
 
       - name: Start FastAPI server
-        run: pipenv run python3 main.py &
+        run: pipenv run python3 app.py &
         env:
           PYTHONUNBUFFERED: 1
 
